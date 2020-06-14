@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update Customer</title>
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/custsc.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet">
+	
+
+	<style type="text/css">
+		
+	</style>
+</head>
+<body class="backgroundproperties"> <!-- Same background color to all screens : #00001a -->
+
+<!-- -----------------------------------------HEADER START-------------------------------------------------->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger bold">
+	<a class="navbar-brand" href="#">
+    <img src="images/logo.png" width="30" height="30" alt="">
+  </a>
+  <a class="navbar-brand" href="#">RAKHSA BANK | </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+    <!-- HOME -->
+      <li class="nav-item active mr-3">
+      		<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      
+    <!----------------- CUSTOMER MANAGEMENT ---------------------->
+      <li class="nav-item dropdown mr-3 ">
+        <a class="nav-link dropdown-toggle text-light btn-outline-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Customer Management
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+
+
+     <!----------------- ACCOUNT MANAGEMENT ---------------------->
+       <li class="nav-item dropdown mr-3">
+        <a class="nav-link dropdown-toggle text-light btn-outline-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Account Management
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+
+
+       <!----------------- STATUS DETAILS ---------------------->
+       <li class="nav-item dropdown mr-3">
+        <a class="nav-link dropdown-toggle text-light btn-outline-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Status Details
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+
+       <!----------------- ACCOUNT OPERATIONS ---------------------->
+       <li class="nav-item dropdown mr-3">
+        <a class="nav-link dropdown-toggle text-light btn-outline-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Account Operations
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      
+      
+    </ul>
+    
+      <button class="btn btn-warning rounded-pill btn-sm my-2 my-sm-0" type="submit">Logout</button>
+    
+  </div>
+</nav>
+		
+<!-- -----------------------------------------HEADER END------------------------------------------------- -->
+
+
+
+<!-- -----------------------------------------CONTAINER--------------------------------------------------- -->
+<div class="login">
+  <div class="wrap-contact100">
+      <div class="contact100-form-title">
+        <span class="contact100-form-title-1">
+         <strong>Create Customer Screen</strong> 
+        </span>
+      </div>
+
+<form action="" method="post">
+        <div class="wrap-input100">
+          <label class="label-input100"><b>Customer SSN-Id:  <span class="required">*</span></b></label>
+          
+
+          <input class="input100" type="text" name="SSN-Id" placeholder="Enter SSN-Id" required>
+          
+        </div>
+
+        <div class="wrap-input100">
+          <label class="label-input100"><b>Customer Name:  <span class="required">*</span></b></label>
+          <input class="input100" type="text" name="name" placeholder="Enter your name" required>
+          
+        </div>
+
+        <div class="wrap-input100">
+          <label class="label-input100"><b>Age:  <span class="required">*</span></b></label>
+          <input class="input100" type="text" name="phone" placeholder="Enter your age" required>
+          
+        </div>
+
+        <div class="wrap-input100">
+          <label class="label-input100"><b>Address:  <span class="required">*</span></b> </label>
+            <input class="input100" type="text" name="name" placeholder="Enter Address" required>
+         
+        </div>
+        <br>
+        <div class="wrap-input1000">
+          <label class="label-input1000"><b>State:  <span class="required">*</span></b> </label>
+          <select name="state" id="state" required>
+            <option  selected> Select </option>
+  <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+<option value="Daman and Diu">Daman and Diu</option>
+<option value="Delhi">Delhi</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Lakshadweep">Lakshadweep</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Orissa">Orissa</option>
+<option value="Pondicherry">Pondicherry</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttaranchal">Uttaranchal</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="West Bengal">West Bengal</option>
+</select>
+        </div>
+<br>
+        <div class="wrap-input1000">
+          <label class="label-input1000"><b>City:  <span class="required">*</span></b> </label>
+          <select name="city" id="city" required>
+            <option  selected> Select </option>
+  <option value="Bangalore">Bangalore</option>
+<option value="Chennai">Chennai</option>
+<option value="Noida">Noida</option>
+<option value="Trivandrum">Trivandrum</option>
+
+
+</select>
+        </div>
+
+        <br>
+
+           <label class="required">(<b>*</b>)fields are compulsory</label>
+          <button class="btn btn-primary" style='margin-right:20px'>
+            <span>
+              Submit
+            </span>
+          </button> &nbsp&nbsp
+        <button class="btn btn-warning">
+          <span> Reset</span>
+        </button>
+      </form>
+</div>
+</div>
+<!-- -----------------------------------------CONTAINER END-------------------------------------------------->
+
+
+
+<!-- -------------------------FOOTER------------------------------- -->
+
+<!-- Footer -->
+<footer class="page-footer font-small bg-danger mt-5 text-light blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h2 id="special">About Us</h2>
+        <p id="special">
+        	Raksha Bank was founded on 12 June 2020. with objective of providing easier access
+        	and security to the users.
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h2 id="special" class="text-uppercase">services</h2>
+
+      	<p id="special">
+      		Retail and Customer Banking
+      		Corporate Banking 
+      	</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h2 class="text-uppercase" id="special">contact us</h2>
+
+        <p id="special1">
+        	Email : CustomerService@rakshab
+        	<br>
+        	Contact no : 7312xxx123
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="#"> RakshBank.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+<!-- --------------------------FOOTER END-------------------------- -->
+
+
+
+
+</body>
+</html>

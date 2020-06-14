@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<!-- Form validation script -->
+	<script type="text/javascript" src="js/validateForm.js"></script>
+
+
+	<title>Delete Customer</title>
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet">
+	
+
+	<style type="text/css">
+		
+	</style>
+</head>
+<body class="backgroundproperties"> <!-- Same background color to all screens : #00001a -->
+
+<!-- -----------------------------------------HEADER START-------------------------------------------------->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger bold">
+	<a class="navbar-brand" href="#">
+    <img src="images/logo.png" width="30" height="30" alt="">
+  </a>
+  <a class="navbar-brand" href="#">RAKHSA BANK | </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+    <!-- HOME -->
+      <li class="nav-item active mr-3">
+      		<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      
+    <!----------------- CUSTOMER MANAGEMENT ---------------------->
+      <li class="nav-item dropdown mr-3 ">
+        <a class="nav-link dropdown-toggle text-light btn-outline-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Customer Management
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+
+
+     <!----------------- ACCOUNT MANAGEMENT ---------------------->
+       <li class="nav-item dropdown mr-3">
+        <a class="nav-link dropdown-toggle text-light btn-outline-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Account Management
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+
+
+       <!----------------- STATUS DETAILS ---------------------->
+       <li class="nav-item dropdown mr-3">
+        <a class="nav-link dropdown-toggle text-light btn-outline-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Status Details
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+
+       <!----------------- ACCOUNT OPERATIONS ---------------------->
+       <li class="nav-item dropdown mr-3">
+        <a class="nav-link dropdown-toggle text-light btn-outline-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Account Operations
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      
+      
+    </ul>
+    
+      <button class="btn btn-warning rounded-pill btn-sm my-2 my-sm-0" type="submit">Logout</button>
+    
+  </div>
+</nav>
+		
+<!-- -----------------------------------------HEADER END------------------------------------------------- -->
+
+
+
+<!-- -----------------------------------------CONTAINER--------------------------------------------------- -->
+
+<form name="delete" action="" method="POST" onsubmit="return validateDeleteForm()" >
+
+	<div class="login container">
+		<div class="block1 " style="height: 800px">
+			<form action="" method="">
+
+				<div class="form_input">
+        <div class="input_group"> 
+          <a id="special"> SSN Id :</a><input type="text" name="SSN_Id" placeholder="SSN Id">
+          <br/>
+        </div>
+
+
+				<div class="input_group">
+          <a id="special">Customer Id : </a>
+          <input type="text" name="Customer_Id" placeholder="Customer Id">
+          <br/>
+        </div>
+
+        <div class="input_group">
+          <a id="special">Name : </a>
+          <input type="text" name="Customer_Name" placeholder="Customer Name">
+          <br/>
+        </div>
+
+        
+        <div class="input_group">
+          <a id="special">Age : </a>
+          <input type="text" name="Age" placeholder="Age">
+          <br/>
+        </div>
+
+        <div class="input_group">
+          <a id="special">Address : </a>
+          <input type="text" name="Address" placeholder="Address">
+          <br/>
+        </div>
+
+
+					
+					<button type="submit" value="Submit" class="btn-login">Delete</button>
+					<br/>
+					
+					
+
+				</div>
+
+			</form>
+			
+		</div>
+	</div>
+
+<!-- -----------------------------------------CONTAINER END-------------------------------------------------->
+
+
+
+<!-- -------------------------FOOTER------------------------------- -->
+
+<!-- Footer -->
+<footer class="footer-distributed">
+  <div class="footer-left">
+    <a class="footer-heading" href="#">RAKHSA BANK</a>
+    <p class="footer-company-about">
+      <br>
+      <span>About Us</span>
+      Rakhsa Bank was founded with the objective of providing with services based on Reatil Banking operations. The Retail internet banking of Rakhsa Bank offeres numerous services and products to cater its customer's requirements
+    </p>
+    <br>
+  </div>
+  <div class="footer-center">
+    <a class="footer-heading" href="#">Services</a>
+    <br>
+    <br>
+    <p class="footer-links">
+      <a href="#">Retail and Consumer Banking</a>
+      <br>
+      <a href="#">Personal Internet Banking</a>
+      <br>
+      <a href="#">Corporate Internet Banking</a>
+      <br>
+      <a href="#">Debit and Credit Cards</a>
+    </p>
+  </div>
+  <div class="footer-right">
+    <a class="footer-heading" href="#">Contact US</a>
+    <br>
+    <br>
+    <div class="footer-right-text">
+      <p><span>Email: </span><br><br>
+        <span>Contact No:</span><br><br>
+        <span>Address:</span>
+      </p>
+    </div>
+  </div>
+  <center>
+    <p class="footer-company-name">© 2020 Rakhsa Bank</p>
+  </center>
+</footer>
+
+
+<!-- --------------------------FOOTER END-------------------------- -->
+
+
+
+
+</body>
+</html>
